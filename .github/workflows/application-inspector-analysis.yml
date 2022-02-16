@@ -27,7 +27,7 @@ jobs:
         uses: microsoft/ApplicationInspector-Action@fe3a2a9f9972977aeca0436ea978fe6f25ad43cb
 
 
-      - name: Upload Trivy scan results to GitHub Security tab
+      - name: Upload app inspector scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: 'application_inspector.sarif'  
